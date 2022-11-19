@@ -2,26 +2,35 @@ import React, { useState } from "react";
 
 function TodoForm(props) {
 
-    const [text, setText] = useState('')
+    const [textTitle, setTextTitle] = useState('')
+    const [textDesc, setTextDesc] = useState('')
 
-    function handleChange(event) {
+    function handleChange(e) {
 
-        let t = event.target.value
-        setText(t)
+        let t = e.target.value
+        if (e.target.name == "title") {
+            setTextTitle(t)
+        }
+        if (e.target.name == "description") {
+            setTextDesc(t)
+        }
+        
     }
 
     function addItem(event) {
         event.preventDefault()
-        if (text) {
+        if (textTitle) {
             //setItems([...items, text])
-            props.onAddItem(text)
-            setText("")
+            props.onAddItem([textTitle, textDesc])
+            setTextTitle("")
+            setTextDesc("")
         }
-    }   
+    }
     return (
 
         <form id="add-form">
-            <input type="text" onChange={handleChange} value={text}/>
+            <input type="text" onChange={handleChange} value={textTitle} placeholder="Título" name="title"/>
+            <input type="text" onChange={handleChange} value={textDesc} placeholder="Descrição" name="description"/>
             <button onClick={addItem}>Add</button>
         </form>
     )

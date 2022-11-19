@@ -24,6 +24,7 @@ button {
 
 .done {
     text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.742); 
 }
 
 ul {
@@ -38,10 +39,8 @@ ul {
     align-items: center;
     border-radius: 10px;
     width: 100%;
-    font-size: 25px;
     padding: 15px;
     margin: 15px;
-    color: black;
     background-color: #ffe0ef;
 }
 
@@ -50,8 +49,18 @@ ul {
 }
 
 .item-text {
-    max-width: 495px;
+    max-width: 490px;
     overflow-wrap: break-word;
+}
+
+.item-text h6 {
+    font-size: 25px;
+    color: rgb(73, 9, 44);
+}
+
+.item-text p {
+    color: #222222;
+    font-size: 0.8rem;
 }
 
 .card {
@@ -103,13 +112,22 @@ ul {
 }
 
 .card-modal {
+    width: 40%;
     padding: 20px;
     background-color: #ffe0ef;
 }
 
 #add-form {
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 10px;
+}
+
+#add-form .div-input {
+    width: 100%;
 }
 
 #add-form input {
@@ -120,6 +138,8 @@ ul {
 }
 
 #add-form button{
+    align-self: flex-end;
+    margin-right: 0;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
