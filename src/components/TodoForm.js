@@ -20,7 +20,7 @@ function TodoForm(props) {
     }   
     return (
 
-        <form>
+        <form id="add-form">
             <input type="text" onChange={handleChange} value={text}/>
             <button onClick={addItem}>Add</button>
         </form>

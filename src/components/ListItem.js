@@ -11,13 +11,14 @@ function DoneImg(props) {
 }
 
 function ListItem(props) {
+    console.log(props.item)
 
     return (<li>
         <Card className={props.item.done ? "done item" : "item"}>
-            {props.item.text}
-            <div>
-                <button onClick={() => { props.onDone(props.item) }}><DoneImg done={props.item.done}></DoneImg></button>
-                <button onClick={() => { props.onItemDeleted(props.item) }}><img src="./assets/bin.png" alt="delete"></img></button>
+            <div className="item-text">{props.item.text}</div>
+            <div className="control">
+                <div onClick={() => { props.onDone(props.item) }}><DoneImg done={props.item.done}></DoneImg></div>
+                <div onClick={() => { props.onItemDeleted(props.item) }}><img src="./assets/bin.png" alt="delete"></img></div>
             </div>
         </Card>
     </li>)
