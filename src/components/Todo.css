@@ -10,6 +10,8 @@ body {
         sans-serif;
     background-color: rgba(73, 9, 44, 0.82);
     color: #ffe0ef;
+    height: 100%;
+    width: 100%;
 }
 
 button {
@@ -19,6 +21,7 @@ button {
 .container {
     margin: auto;
     margin-top: 20px;
+    width: 80%;
     max-width: 600px;
 }
 
@@ -49,7 +52,7 @@ ul {
 }
 
 .item-text {
-    max-width: 490px;
+    width: 70%;
     overflow-wrap: break-word;
 }
 
@@ -75,7 +78,7 @@ ul {
 
 .control{
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 
 .control div {
