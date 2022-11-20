@@ -9,15 +9,12 @@
 
 
 <div align="center">
-  <img alt="" title="" src="" height="400px"/>
-  <img alt="" title="" src="" height="400px"/>
-  <img alt="" title="" src="" height="400px"/>
-
+  <img alt="todo" title="Todo List" src="./public/assets/todo.gif" height="400px"/>
 </div>
 
 ## 💻 Projeto
 
-O todo list 
+O todo list é uma lista de tarefas desenvolvida em React você pode criar tarefas, marca-las como feitas e deleta-las. As tarefas ficam salvas no seu armazenamento local.
 
 ## 🚀 Tecnologias
 
@@ -30,4 +27,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Made with 💟 by Damien Costa ✌🏿
 
-<a href="https://www.linkedin.com/in/damien-costa-969953164/" target="_blank">![LinkedIn Badge](https://img.shields.io/badge/-Damien_Costa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/damien-costa-969953164/)
+<a href="https://www.linkedin.com/in/damien-costa/" target="_blank">![LinkedIn Badge](https://img.shields.io/badge/-Damien_Costa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/damien-costa-969953164/)
