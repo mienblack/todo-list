@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import TodoForm from '../src/components/TodoForm'
 import List from '../src/components/List'
 import Item from '../src/components/Item'
-import  Modal from "../src/components/Modal"
+import Modal from "../src/components/Modal"
+import Footer from "../src/components/Footer"
 
 const SAVED_ITEMS = "savedItems"
 
@@ -12,7 +13,7 @@ function Todo() {
 
     useEffect(() => {
         let savedItems = JSON.parse(localStorage.getItem(SAVED_ITEMS))
-        if(savedItems) {
+        if (savedItems) {
             setItems(savedItems)
         }
     }, [])
@@ -37,11 +38,11 @@ function Todo() {
     function onDone(item) {
 
         let updateItems = items.map(it => {
-            if(it.id === item.id) {
+            if (it.id === item.id) {
                 it.done = !it.done
             }
             return it
-        })        
+        })
         setItems(updateItems)
     }
 
@@ -53,12 +54,17 @@ function Todo() {
         <div className='container'>
             <header className='header'>
                 <h1>TODO</h1>
-                <button className='addButton' onClick={() => {setShowModal(true)}}>+</button>
+                <button className='addButton' onClick={() => { setShowModal(true) }}>+</button>
             </header>
 
             <List onDone={onDone} onItemDeleted={onItemDeleted} items={items}></List>
 
-            <Modal show={showModal} onHideModal={onHideModal}><TodoForm onAddItem={onAddItem}></TodoForm></Modal>
+            <Modal show={showModal} onHideModal={onHideModal}>
+                <TodoForm onAddItem={onAddItem} />
+            </Modal>
+
+            <Footer />
+
         </div>
     )
 }

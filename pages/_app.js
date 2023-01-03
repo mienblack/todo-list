@@ -1,4 +1,4 @@
-import '../src/components/Todo.css'
+import '../src/index.css'
 import Head from 'next/head'
 
 export default function MyApp({ Component, pageProps }) {

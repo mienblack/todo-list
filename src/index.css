@@ -21,13 +21,14 @@ button {
 .container {
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 100px;
     width: 80%;
     max-width: 600px;
 }
 
 .done {
     text-decoration: line-through;
-    text-decoration-color: rgba(0, 0, 0, 0.742); 
+    text-decoration-color: rgba(0, 0, 0, 0.742);
 }
 
 ul {
@@ -76,7 +77,7 @@ ul {
     margin-right: 10px;
 }
 
-.control{
+.control {
     display: flex;
     gap: 15px;
 }
@@ -134,13 +135,13 @@ ul {
 }
 
 #add-form input {
- padding: 5px;
- border: 1px solid  rgb(73, 9, 44);
- border-radius: 5px;
- color: black;
+    padding: 5px;
+    border: 1px solid rgb(73, 9, 44);
+    border-radius: 5px;
+    color: black;
 }
 
-#add-form button{
+#add-form button {
     align-self: flex-end;
     margin-right: 0;
     padding: 5px 10px;
@@ -152,4 +153,62 @@ ul {
 
 .hide {
     display: none;
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(73, 9, 44);
+    color: #ffe0ef;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.socialList li {
+    margin: 0 1em;
+    font-size: 1.2em;
+}
+
+.socialList a {
+    text-decoration: none;
+}
+
+.socialList a:hover {
+    color: #ffbb33;
+}
+
+.ref {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.7rem;
+    padding-right: 20px;
+}
+
+.refSpan {
+    color: #ffbb33;
+    font-weight: bold;
+}
+
+.footer a {
+    padding: 2px;
+    text-decoration: none;
+    color: #ffe0ef;
+    cursor: pointer;
 }

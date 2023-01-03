@@ -11,7 +11,6 @@ function DoneImg(props) {
 }
 
 function ListItem(props) {
-    console.log(props.item)
 
     return (<li>
         <Card className={props.item.done ? "done item" : "item"}>
