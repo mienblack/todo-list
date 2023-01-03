@@ -7,9 +7,8 @@
 
 <br>
 
-
 <div align="center">
-  <img alt="todo" title="Todo List" src="./public/assets/todo.gif" height="400px"/>
+  <img alt="todo" title="Todo List" src="./public/assets/todo_list.gif" height="400px"/>
 </div>
 
 ## 💻 Projeto
@@ -20,6 +19,7 @@ O todo list é uma lista de tarefas desenvolvida em React você pode criar taref
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+- [NextJS]
 - [ReactJs]
 - [Javascript]
 - [HTML]
